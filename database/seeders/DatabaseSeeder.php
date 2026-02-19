@@ -17,6 +17,6 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(2)->create();
 
-      
+      $this->call(AdminUserSeeder::class);
     }
 }
